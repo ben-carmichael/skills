@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "bc-skills",
-      "source": ".",
+      "source": "ben-carmichael/bc-marketplace",
       "description": "Personal collection of Claude Code skills for development workflows",
       "version": "0.1.0"
     }

@@ -1,15 +1,19 @@
 ---
 name: case-study
 description: Generate a polished case study blog post in markdown from a code repository. Use when the user wants to create portfolio content, a case study, a project write-up, or blog post about a codebase they've built. Also trigger when user mentions "write up this project", "portfolio piece", "showcase this repo", or "document this for my blog" — even if they don't say "case study" explicitly.
+argument-hint: [optional: your role, employer, audience, or other context to personalize the write-up]
+allowed-tools: Glob, Grep, Read, Write, Bash
 ---
 
 # Case Study Generator
 
-Generate a professional case study blog post in markdown format from a code repository. The case study is portfolio content for Ben Carmichael, a developer at Dentsu, aimed at hiring managers who have a technical background.
+Generate a professional case study blog post in markdown format from a code repository. The output is portfolio content aimed at a technical audience — typically hiring managers or senior engineers evaluating the author's work.
+
+If the user provides personal context (e.g., their name, role, employer, or audience) via arguments or in conversation, incorporate it. Otherwise, write in a neutral first-person voice and ask for any key details you need before writing.
 
 ## Audience & Tone
 
-The reader is a **hiring manager with technical understanding** — someone who can appreciate architectural decisions and technology choices but also cares about business impact, problem-solving ability, and communication clarity. They're scanning this to assess whether the author is someone they'd want on their team.
+The reader is a **hiring manager or senior engineer with technical understanding** — someone who can appreciate architectural decisions and technology choices but also cares about business impact, problem-solving ability, and communication clarity. They're scanning this to assess whether the author is someone they'd want on their team.
 
 Write in a **professional, polished marketing style with technical substance**. This means:
 - Lead with impact and purpose, not implementation details

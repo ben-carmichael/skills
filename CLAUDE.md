@@ -21,11 +21,25 @@ A Claude Code plugin marketplace (`bc-marketplace`) containing a personal collec
 4. Add an entry to CHANGELOG.md
 5. Bump `version` in both `plugin.json` and `marketplace.json`
 
-## Validation
+## Commands
 
 ```bash
+# Validate plugin structure and schema
 claude plugin validate .
+
+# Install from marketplace (on any machine)
+/plugin marketplace add ben-carmichael/bc-marketplace
+/plugin install bc-skills@bc-marketplace
+
+# Update installed plugin
+claude plugin update bc-skills
 ```
+
+## Gotchas
+
+- **`marketplace.json` source field** must be `owner/repo` (e.g., `"ben-carmichael/bc-marketplace"`), not a relative path like `"."` — the validator will reject it with `Invalid input`
+- **Version sync**: `plugin.json` and `marketplace.json` must always have matching `version` values — bump both together when releasing
+- **`argument-hint` on user-invoked skills**: omit entirely if the skill takes no arguments; setting it to `(no arguments)` may be treated as a literal hint string
 
 ## Skill Conventions
 

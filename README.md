@@ -13,11 +13,15 @@ A Claude Code plugin marketplace containing a personal collection of skills for 
 
 ### Install
 
-```bash
-# Add the marketplace (one-time)
-/plugin marketplace add ben-carmichael/bc-marketplace
+#### Add the marketplace (one-time)
 
-# Install the plugin
+```bash
+/plugin marketplace add ben-carmichael/bc-marketplace
+```
+
+#### Install the plugin
+
+```bash
 /plugin install bc-skills@bc-marketplace
 ```
 
