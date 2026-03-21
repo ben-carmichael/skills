@@ -40,6 +40,7 @@ claude plugin update bc-skills
 - **`marketplace.json` source field** must be an object, not a plain string: `{ "source": "github", "repo": "ben-carmichael/bc-marketplace" }` — a plain string like `"owner/repo"` or `"."` will fail with `Invalid input`
 - **Version sync**: `plugin.json` and `marketplace.json` must always have matching `version` values — bump both together when releasing
 - **`argument-hint` on user-invoked skills**: omit entirely if the skill takes no arguments; setting it to `(no arguments)` may be treated as a literal hint string
+- **Skill `name` must include the plugin namespace**: Use `name: bc-skills:todo` (not just `name: todo`) — without the prefix the skill registers as `/todo` globally instead of `/bc-skills:todo`. The validator will warn that the name doesn't match the folder name; ignore that warning, this is intentional
 
 ## Skill Conventions
 

@@ -1,6 +1,6 @@
 {
   "name": "bc-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Personal collection of Claude Code skills for development workflows",
   "author": {
     "name": "Benjamin Carmichael"
