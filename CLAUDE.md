@@ -37,7 +37,7 @@ claude plugin update bc-skills
 
 ## Gotchas
 
-- **`marketplace.json` source field** must be `owner/repo` (e.g., `"ben-carmichael/bc-marketplace"`), not a relative path like `"."` — the validator will reject it with `Invalid input`
+- **`marketplace.json` source field** must be an object, not a plain string: `{ "source": "github", "repo": "ben-carmichael/bc-marketplace" }` — a plain string like `"owner/repo"` or `"."` will fail with `Invalid input`
 - **Version sync**: `plugin.json` and `marketplace.json` must always have matching `version` values — bump both together when releasing
 - **`argument-hint` on user-invoked skills**: omit entirely if the skill takes no arguments; setting it to `(no arguments)` may be treated as a literal hint string
 
