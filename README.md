@@ -14,13 +14,17 @@ Personal collection of Claude Code skills, installable as a plugin across machin
 ### Install
 
 ```bash
-claude plugin add https://github.com/ben-carmichael/bc-skills
+# Add the marketplace (one-time)
+/plugin marketplace add ben-carmichael/bc-marketplace
+
+# Install the plugin
+/plugin install bc-skills@bc-marketplace
 ```
 
 ### Uninstall
 
 ```bash
-claude plugin remove bc-skills
+claude plugin uninstall bc-skills
 ```
 
 ### Enable / Disable
@@ -38,11 +42,11 @@ claude plugin update bc-skills
 
 ### Auto-Update
 
-If this plugin is installed via a marketplace, auto-update can be enabled so Claude Code fetches the latest version at session start. To configure:
+Auto-update can be enabled so Claude Code fetches the latest version at session start:
 
 1. Run `/plugin` to open the plugin manager
 2. Select the **Marketplaces** tab
-3. Choose the marketplace containing bc-skills
+3. Choose **bc-marketplace**
 4. Select **Enable auto-update**
 
 To disable all plugin auto-updates via environment variable:
