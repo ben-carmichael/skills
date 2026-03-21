@@ -41,7 +41,7 @@ claude plugin disable bc-skills
 ### Update
 
 ```bash
-claude plugin update bc-skills
+claude plugin update bc-skills@bc-marketplace
 ```
 
 ### Auto-Update
