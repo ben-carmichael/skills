@@ -1,13 +1,13 @@
-# bc-skills
+# bc-marketplace
 
-Personal collection of Claude Code skills, installable as a plugin across machines.
+A Claude Code plugin marketplace containing a personal collection of skills for development workflows.
 
 ## Skills
 
-| Skill | Description |
-|-------|-------------|
-| `todo` | Creates a structured TODO.md with Bugs, Features, and Chores sections |
-| `case-study` | Generates a polished case study blog post from a code repository |
+| Skill        | Description                                                           |
+| ------------ | --------------------------------------------------------------------- |
+| `todo`       | Creates a structured TODO.md with Bugs, Features, and Chores sections |
+| `case-study` | Generates a polished case study blog post from a code repository      |
 
 ## Plugin Management
 

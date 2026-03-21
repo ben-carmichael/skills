@@ -4,10 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A Claude Code plugin (`bc-skills`) — a personal collection of skills installable across machines via `claude plugin add https://github.com/ben-carmichael/bc-skills`.
+A Claude Code plugin marketplace (`bc-marketplace`) containing a personal collection of skills (`bc-skills`), installable across machines via `/plugin marketplace add ben-carmichael/bc-marketplace`.
 
-## Plugin Structure
+## Structure
 
+- `.claude-plugin/marketplace.json` — Marketplace catalog listing available plugins
 - `.claude-plugin/plugin.json` — Plugin manifest (name, version, metadata)
 - `skills/<name>/SKILL.md` — Each skill lives in its own directory with a required SKILL.md
 - `skills/<name>/references/` — Supporting reference files loaded on demand
@@ -18,6 +19,13 @@ A Claude Code plugin (`bc-skills`) — a personal collection of skills installab
 2. Optionally add `references/`, `examples/`, or `scripts/` subdirectories for supporting content
 3. Update the skills table in README.md
 4. Add an entry to CHANGELOG.md
+5. Bump `version` in both `plugin.json` and `marketplace.json`
+
+## Validation
+
+```bash
+claude plugin validate .
+```
 
 ## Skill Conventions
 
