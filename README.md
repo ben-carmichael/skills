@@ -1,6 +1,6 @@
 # Agent Skills
 
-A collection of reusable skills for development workflows.
+A collection of reusable skills for development workflows. Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
 
 ## Planning & Design
 
