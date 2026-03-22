@@ -1,28 +1,39 @@
 # Agent Skills
 
-A collection of reusable skills for Claude Code development workflows.
+A collection of agent skills that extend capabilities across planning, development, and writing.
 
-## Skills
+## Planning & Design
 
-| Skill        | Description                                                           |
-| ------------ | --------------------------------------------------------------------- |
-| `todo`       | Creates a structured TODO.md with Bugs, Features, and Chores sections |
-| `write-case-study` | Generates a polished case study blog post from a code repository      |
+- **grill-me** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
 
-## Install
+  ```
+  npx skills@latest add ben-carmichael/skills/grill-me
+  ```
 
-```bash
-npx skills@latest add ben-carmichael/skills/todo
-npx skills@latest add ben-carmichael/skills/write-case-study
-```
+- **prd-to-issues** — Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices.
 
-## Usage
+  ```
+  npx skills@latest add ben-carmichael/skills/prd-to-issues
+  ```
 
-Skills trigger automatically based on context, or can be invoked directly:
+- **write-prd** — Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
 
-- `/todo` — Add a TODO.md to the current project
-- `/write-case-study` — Generate a case study from the current repo
+  ```
+  npx skills@latest add ben-carmichael/skills/write-prd
+  ```
 
-## License
+## Development
 
-MIT
+- **todo** — Create a structured TODO.md with Bugs, Features, and Chores sections.
+
+  ```
+  npx skills@latest add ben-carmichael/skills/todo
+  ```
+
+## Writing
+
+- **write-case-study** — Generate a polished case study blog post from a code repository.
+
+  ```
+  npx skills@latest add ben-carmichael/skills/write-case-study
+  ```
