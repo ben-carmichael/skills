@@ -10,6 +10,12 @@ A collection of reusable skills for development workflows.
   npx skills@latest add ben-carmichael/skills/grill-me
   ```
 
+- **issue-to-plan** — Create a concrete implementation plan from a GitHub issue, exploring the codebase to identify files and changes needed.
+
+  ```
+  npx skills@latest add ben-carmichael/skills/issue-to-plan
+  ```
+
 - **prd-to-issues** — Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. _Adapted from [mattpocock/skills](https://github.com/mattpocock/skills)._
 
   ```
