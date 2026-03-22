@@ -1,22 +1,22 @@
 # Agent Skills
 
-A collection of agent skills that extend capabilities across planning, development, and writing.
+A collection of reusable skills for development workflows.
 
 ## Planning & Design
 
-- **grill-me** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
+- **grill-me** — Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved. _Adapted from [mattpocock/skills](https://github.com/mattpocock/skills)._
 
   ```
   npx skills@latest add ben-carmichael/skills/grill-me
   ```
 
-- **prd-to-issues** — Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices.
+- **prd-to-issues** — Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices. _Adapted from [mattpocock/skills](https://github.com/mattpocock/skills)._
 
   ```
   npx skills@latest add ben-carmichael/skills/prd-to-issues
   ```
 
-- **write-prd** — Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
+- **write-prd** — Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue. _Adapted from [mattpocock/skills](https://github.com/mattpocock/skills)._
 
   ```
   npx skills@latest add ben-carmichael/skills/write-prd
