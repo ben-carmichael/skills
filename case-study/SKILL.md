@@ -1,8 +1,6 @@
 ---
-name: bc-skills:case-study
+name: case-study
 description: Generate a polished case study blog post in markdown from a code repository. Use when the user wants to create portfolio content, a case study, a project write-up, or blog post about a codebase they've built. Also trigger when user mentions "write up this project", "portfolio piece", "showcase this repo", or "document this for my blog" — even if they don't say "case study" explicitly.
-argument-hint: [optional: your role, employer, audience, or other context to personalize the write-up]
-allowed-tools: Glob, Grep, Read, Write, Bash
 ---
 
 # Case Study Generator
@@ -16,6 +14,7 @@ If the user provides personal context (e.g., their name, role, employer, or audi
 The reader is a **hiring manager or senior engineer with technical understanding** — someone who can appreciate architectural decisions and technology choices but also cares about business impact, problem-solving ability, and communication clarity. They're scanning this to assess whether the author is someone they'd want on their team.
 
 Write in a **professional, polished marketing style with technical substance**. This means:
+
 - Lead with impact and purpose, not implementation details
 - Use technical terms accurately but don't assume deep framework expertise
 - Show decision-making and judgment, not just what was built

@@ -1,4 +1,4 @@
-# bc-marketplace
+# Agent Skills
 
 A Claude Code plugin marketplace containing a personal collection of skills for development workflows.
 

@@ -1,7 +1,6 @@
 ---
-name: bc-skills:todo
+name: todo
 description: Add a structured TODO.md tracking file to the project root. This skill should be used when the user asks to "add a todo file", "create TODO.md", "set up task tracking", "initialize a TODO list", or runs the /bc-skills:todo command.
-allowed-tools: Read, Write, AskUserQuestion
 ---
 
 # Add TODO.md to Project
