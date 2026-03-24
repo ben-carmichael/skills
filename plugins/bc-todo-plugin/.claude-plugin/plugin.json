@@ -1,0 +1,5 @@
+{
+  "name": "bc-todo-plugin",
+  "version": "1.0.0",
+  "description": "Manage a structured TODO.md tracking file in the project root."
+}
