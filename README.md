@@ -18,6 +18,12 @@ Install specific skills:
 npx skills@latest add ben-carmichael/skills --skill bc-grill-me --skill bc-todo
 ```
 
+Install all available skills:
+
+```bash
+npx skills@latest add ben-carmichael/skills --skill "*"
+```
+
 ### List
 
 List all installed skills (project and global):
