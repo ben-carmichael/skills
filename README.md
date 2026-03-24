@@ -6,9 +6,9 @@ A collection of skills for development workflows.
 
 Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
 
-## Available Sills
+## Available Skills
 
-### bc-grill-me
+### `bc-grill-me`
 
 Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
 
