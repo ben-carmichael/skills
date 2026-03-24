@@ -8,97 +8,86 @@ Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
 
 ### Install
 
-```bash
-# Install a skill
-npx skills@latest add ben-carmichael/skills/bc-<skill-name>
+Select from all available skills:
 
-# Install multiple skills
+```bash
+npx skills@latest add ben-carmichael/skills
+```
+
+Install specific skills:
+
+```bash
 npx skills@latest add ben-carmichael/skills --skill bc-grill-me --skill bc-todo
+```
+
+### List
+
+List all installed skills (project and global):
+
+```bash
+npx skills@latest list
+
+```
+
+List only global skills:
+
+```bash
+npx skills@latest list -g
+
 ```
 
 ### Update
 
+Check if any installed skills have updates:
+
 ```bash
-# Check if any installed skills have updates
 npx skills@latest check
 
-# Update all skills to latest versions
+```
+
+Update all skills to latest versions:
+
+```bash
 npx skills@latest update
 ```
 
 ### Remove
 
+Remove interactively (select from installed skills):
+
 ```bash
-# Remove interactively (select from installed skills)
 npx skills@latest remove
+```
 
-# Remove a specific skill by name
+Remove a specific skill by name:
+
+```bash
 npx skills@latest remove bc-grill-me
+```
 
-# Remove from global scope
+Remove from global scope:
+
+```bash
 npx skills@latest remove --global bc-grill-me
 ```
 
-### List
+## Available Skills
 
-```bash
-# List all installed skills (project and global)
-npx skills@latest list
-
-# List only global skills
-npx skills@latest ls -g
-```
-
-## Planning & Design
-
-### bc-grill-me
-
-Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-grill-me
-```
-
-### bc-issue-to-plan
-
-Create a concrete implementation plan from a GitHub issue, exploring the codebase to identify files and changes needed.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-issue-to-plan
-```
-
-### bc-prd-to-issues
-
-Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-prd-to-issues
-```
-
-### bc-write-prd
-
-Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-write-prd
-```
+- `bc-grill-me`
+  - Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
+- `bc-issue-to-plan`
+  - Create a concrete implementation plan from a GitHub issue, exploring the codebase to identify files and changes needed.
+- `bc-prd-to-issues`
+  - Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices.
+- `bc-write-prd`
+  - Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
 
 ## Development
 
-### bc-todo
-
-Create a structured TODO.md with Bugs, Features, and Chores sections.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-todo
-```
+- `bc-todo`
+  - Create a structured TODO.md with Bugs, Features, and Chores sections.
 
 ## Writing
 
-### bc-write-case-study
-
-Generate a polished case study blog post from a code repository.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-write-case-study
-```
+- `bc-write-case-study`
+  - Generate a polished case study blog post from a code repository.
