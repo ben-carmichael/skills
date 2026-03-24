@@ -1,5 +1,0 @@
-{
-  "name": "bc-issue-to-plan-plugin",
-  "version": "1.0.0",
-  "description": "Create a detailed implementation plan from a GitHub issue by exploring the codebase."
-}

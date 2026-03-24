@@ -30,12 +30,6 @@ A collection of reusable skills for development workflows. Installable via the [
 
 ## Development
 
-- **bc-find-skills** — Browse ben-carmichael's skill collection and install the right skill for the job.
-
-  ```
-  npx skills@latest add ben-carmichael/skills/bc-find-skills
-  ```
-
 - **bc-todo** — Create a structured TODO.md with Bugs, Features, and Chores sections.
 
   ```

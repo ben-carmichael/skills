@@ -1,5 +1,0 @@
-{
-  "name": "bc-prd-to-issues-plugin",
-  "version": "1.0.0",
-  "description": "Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices."
-}

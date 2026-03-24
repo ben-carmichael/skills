@@ -1,5 +1,0 @@
-{
-  "name": "bc-write-case-study-plugin",
-  "version": "1.0.0",
-  "description": "Generate a polished case study blog post in markdown from a code repository."
-}
