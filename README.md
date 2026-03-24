@@ -1,8 +1,10 @@
 # Agent Skills
 
-A collection of reusable skills for development workflows. Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
+A collection of skills for development workflows.
 
 ## Installation
+
+Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
 
 ## Available Sills
 
