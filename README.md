@@ -2,7 +2,11 @@
 
 A collection of skills for development workflows.
 
+## Install
+
 Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
+
+## Planning & Design
 
 ## `bc-grill-me`
 
@@ -28,6 +32,16 @@ Break a PRD into independently-grabbable GitHub issues using tracer-bullet verti
 npx skills@latest add ben-carmichael/skills/bc-prd-to-issues
 ```
 
+## `bc-write-prd`
+
+Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
+
+```
+npx skills@latest add ben-carmichael/skills/bc-write-prd
+```
+
+## Development
+
 ## `bc-todo`
 
 Create a structured TODO.md with Bugs, Features, and Chores sections.
@@ -36,18 +50,12 @@ Create a structured TODO.md with Bugs, Features, and Chores sections.
 npx skills@latest add ben-carmichael/skills/bc-todo
 ```
 
+## Writing
+
 ## `bc-write-case-study`
 
 Generate a polished case study blog post from a code repository.
 
 ```
 npx skills@latest add ben-carmichael/skills/bc-write-case-study
-```
-
-## `bc-write-prd`
-
-Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
-
-```
-npx skills@latest add ben-carmichael/skills/bc-write-prd
 ```
