@@ -1,8 +1,6 @@
 # Skills
 
-A collection of skills for development workflows.
-
-Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
+A collection of skills for development workflows. Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
 
 ## Skills CLI Commands
 
@@ -73,6 +71,8 @@ npx skills@latest remove --global bc-grill-me
 
 ## Available Skills
 
+### Planning & Design
+
 - `bc-grill-me`
   - Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
 - `bc-issue-to-plan`
@@ -82,12 +82,12 @@ npx skills@latest remove --global bc-grill-me
 - `bc-write-prd`
   - Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
 
-## Development
+### Development
 
 - `bc-todo`
   - Create a structured TODO.md with Bugs, Features, and Chores sections.
 
-## Writing
+### Writing
 
 - `bc-write-case-study`
   - Generate a polished case study blog post from a code repository.
