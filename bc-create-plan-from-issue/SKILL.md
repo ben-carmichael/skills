@@ -1,5 +1,5 @@
 ---
-name: bc-issue-to-plan
+name: bc-create-plan-from-issue
 description: Create a detailed implementation plan from a GitHub issue, exploring the codebase to identify specific files and changes needed. Use when user wants to plan an issue, create an implementation plan, start working on a ticket, convert an issue to a plan, or mentions "plan this issue".
 argument-hint: "<issue-number-or-url>"
 ---
