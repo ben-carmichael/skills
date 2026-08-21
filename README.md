@@ -9,9 +9,16 @@ Two ways in. **The Claude Code plugin** installs the whole set as a managed, rea
 <details>
 <summary><strong>Claude Code plugin</strong></summary>
 
-Add the marketplace once, then install:
+Add the marketplace once, then install. From outside a session:
 
 ```bash
+claude plugin marketplace add ben-carmichael/skills
+claude plugin install bc-skills
+```
+
+Or, from inside a session:
+
+```
 /plugin marketplace add ben-carmichael/skills
 /plugin install bc-skills
 ```
