@@ -7,11 +7,19 @@ description: Cut AI tells from any writing. Must always apply.
 
 Edit text to remove AI patterns and add human voice.
 
+## Determine intent
+
+- **No file arguments**: Apply to the text currently being written in the conversation.
+- **One file-path argument**: That file is the target to unslop.
+- **Two file-path arguments**: The first is the target to unslop; the second is a tone-of-voice reference file (see "Matching a tone reference").
+
+When a target file is given, read it, run the process below, and output the rewritten text. Do not edit the file in place — leave applying the result to the user.
+
 ## Process
 
 1. Scan for the patterns below.
 2. Rewrite. Preserve meaning, match intended tone.
-3. Add soul (see next section).
+3. Add soul (see next section). If a tone reference file was given, match its voice instead of the general heuristics.
 4. Self-audit: "What makes this obviously AI generated?" Fix remaining tells.
 
 ## Adding soul
@@ -24,6 +32,17 @@ Removing patterns is half the job. Sterile, voiceless writing is just as obvious
 - **Use "I" when it fits.** First person isn't unprofessional.
 - **Let some mess in.** Perfect structure looks machine-made.
 - **Be specific.** Not "this is concerning" but "there's something unsettling about agents churning away at 3am."
+
+### Matching a tone reference
+
+When a tone-of-voice file is given, treat it as an example to emulate, not a rules list. Read it and match:
+
+- Sentence length and rhythm.
+- Word choice and vocabulary level.
+- How opinionated or hedged the reference is.
+- Any recurring phrasing or structural habits (how it opens a paragraph, how it transitions).
+
+The reference overrides the general heuristics above where they conflict; it doesn't replace the pattern-detection pass in the next section.
 
 ## Patterns to detect and fix
 
