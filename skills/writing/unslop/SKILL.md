@@ -13,12 +13,12 @@ Edit text to remove AI patterns and add human voice.
 - **One file-path argument**: That file is the target to unslop.
 - **Two file-path arguments**: The first is the target to unslop; the second is a tone-of-voice reference file (see "Matching a tone reference").
 
-When a target file is given, read it, run the process below, and output the rewritten text. Do not edit the file in place — leave applying the result to the user.
+When a target file is given, read it, run the process below, edit the file in place, then show the diff in the console.
 
 ## Process
 
 1. Scan for the patterns below.
-2. Rewrite. Preserve meaning, match intended tone.
+2. Rewrite. Preserve meaning, match intended tone, use British English spelling (colour, organise, realise, travelling).
 3. Add soul (see next section). If a tone reference file was given, match its voice instead of the general heuristics.
 4. Self-audit: "What makes this obviously AI generated?" Fix remaining tells.
 
