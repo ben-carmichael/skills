@@ -91,16 +91,26 @@ npx skills@latest remove --global todo
 
 </details>
 
-## Available Skills
+## Reference
+
+These split on one axis: who can invoke them. **User-invoked** skills are reachable only when you type them (e.g. `/todo`). **Model-invoked** skills can be invoked by you or reached for automatically by the agent when the task fits.
 
 ### Productivity
 
-- `todo`
-  - Create a structured TODO.md with Bugs, Features, and Chores sections.
+General workflow tools, not code-specific.
+
+**User-invoked**
+
+- **[todo](./skills/productivity/todo/SKILL.md)**: Manage a structured TODO.md tracking file in the project root.
 
 ### Writing
 
-- `write-case-study`
-  - Generate a polished case study blog post from a code repository.
-- `unslop`
-  - Cut AI tells from any writing. Must always apply.
+Skills for producing and cleaning up written content.
+
+**User-invoked**
+
+- **[write-case-study](./skills/writing/write-case-study/SKILL.md)**: Generate a polished case study blog post in markdown from a code repository.
+
+**Model-invoked**
+
+- **[unslop](./skills/writing/unslop/SKILL.md)**: Cut AI tells from any writing. Must always apply.
