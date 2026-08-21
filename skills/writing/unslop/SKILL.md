@@ -13,7 +13,7 @@ Edit text to remove AI patterns and add human voice.
 - **One file-path argument**: That file is the target to unslop.
 - **Two file-path arguments**: The first is the target to unslop; the second is a tone-of-voice reference file (see "Matching a tone reference").
 
-When a target file is given, read it, run the process below, edit the file in place, then show the diff in the console.
+When a target file is given, read it, run the process below, edit the file in place, then present the diff.
 
 ## Process
 
