@@ -102,3 +102,5 @@ npx skills@latest remove --global todo
 
 - `write-case-study`
   - Generate a polished case study blog post from a code repository.
+- `unslop`
+  - Cut AI tells from any writing. Must always apply.
