@@ -1,7 +1,8 @@
 ---
 name: todo
-description: Manage a structured TODO.md tracking file in the project root. This skill should be used when the user asks to "add a todo file", "create TODO.md", "set up task tracking", "initialize a TODO list", "add a todo item", "add a bug/feature/chore", "add to my todo list", or runs the /todo command.
+description: Manage a structured TODO.md tracking file in the project root.
 argument-hint: "[item description]"
+disable-model-invocation: true
 ---
 
 # Manage TODO.md

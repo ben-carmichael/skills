@@ -1,6 +1,7 @@
 ---
 name: write-case-study
-description: Generate a polished case study blog post in markdown from a code repository. Use when the user wants to create portfolio content, a case study, a project write-up, or blog post about a codebase they've built. Also trigger when user mentions "write up this project", "portfolio piece", "showcase this repo", or "document this for my blog" — even if they don't say "case study" explicitly.
+description: Generate a polished case study blog post in markdown from a code repository.
+disable-model-invocation: true
 ---
 
 # Case Study Generator
