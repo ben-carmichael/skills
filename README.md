@@ -1,12 +1,29 @@
 # Skills
 
-A collection of skills for development workflows. Installable via the [`skills` CLI](https://github.com/vercel-labs/skills).
+A collection of skills for development workflows. Two ways in: as a Claude Code plugin, or as editable files via the [`skills` CLI](https://github.com/vercel-labs/skills). Pick one — installing both leaves you with every skill twice.
 
-## Skills CLI Commands
+## Installation
 
-### Install
+Two ways in. **The Claude Code plugin** installs the whole set as a managed, read-only bundle that updates when new skills ship — you subscribe rather than fork. **The skills CLI** copies editable skill files into your project, so you can hack on them and make them your own. Pick one — installing both leaves you with every skill twice.
 
-Select from all available skills:
+<details>
+<summary><strong>Claude Code plugin</strong></summary>
+
+Add the marketplace once, then install:
+
+```bash
+/plugin marketplace add ben-carmichael/skills
+/plugin install bc-skills
+```
+
+Commands are namespaced, e.g. `/bc-skills:todo`.
+
+</details>
+
+<details>
+<summary><strong>skills CLI (editable files)</strong></summary>
+
+Copies skill files into your project as ordinary files you own and can edit:
 
 ```bash
 npx skills@latest add ben-carmichael/skills
@@ -15,7 +32,7 @@ npx skills@latest add ben-carmichael/skills
 Install specific skills:
 
 ```bash
-npx skills@latest add ben-carmichael/skills --skill bc-grill-me --skill bc-todo
+npx skills@latest add ben-carmichael/skills --skill todo --skill write-case-study
 ```
 
 Install all available skills:
@@ -24,29 +41,26 @@ Install all available skills:
 npx skills@latest add ben-carmichael/skills --skill "*"
 ```
 
-### List
+##### List
 
 List all installed skills (project and global):
 
 ```bash
 npx skills@latest list
-
 ```
 
 List only global skills:
 
 ```bash
 npx skills@latest list -g
-
 ```
 
-### Update
+##### Update
 
 Check if any installed skills have updates:
 
 ```bash
 npx skills@latest check
-
 ```
 
 Update all skills to latest versions:
@@ -55,7 +69,7 @@ Update all skills to latest versions:
 npx skills@latest update
 ```
 
-### Remove
+##### Remove
 
 Remove interactively (select from installed skills):
 
@@ -66,34 +80,25 @@ npx skills@latest remove
 Remove a specific skill by name:
 
 ```bash
-npx skills@latest remove bc-grill-me
+npx skills@latest remove todo
 ```
 
 Remove from global scope:
 
 ```bash
-npx skills@latest remove --global bc-grill-me
+npx skills@latest remove --global todo
 ```
+
+</details>
 
 ## Available Skills
 
-### Planning & Design
+### Productivity
 
-- `bc-grill-me`
-  - Get relentlessly interviewed about a plan or design until every branch of the decision tree is resolved.
-- `bc-issue-to-plan`
-  - Create a concrete implementation plan from a GitHub issue, exploring the codebase to identify files and changes needed.
-- `bc-prd-to-issues`
-  - Break a PRD into independently-grabbable GitHub issues using tracer-bullet vertical slices.
-- `bc-write-prd`
-  - Create a PRD through user interview, codebase exploration, and module design, then submit as a GitHub issue.
-
-### Development
-
-- `bc-todo`
+- `todo`
   - Create a structured TODO.md with Bugs, Features, and Chores sections.
 
 ### Writing
 
-- `bc-write-case-study`
+- `write-case-study`
   - Generate a polished case study blog post from a code repository.

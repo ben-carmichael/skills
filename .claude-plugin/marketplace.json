@@ -1,0 +1,21 @@
+{
+  "name": "ben-carmichael",
+  "owner": {
+    "name": "Ben Carmichael",
+    "url": "https://github.com/ben-carmichael"
+  },
+  "description": "Ben Carmichael's skills for development workflows, as an installable Claude Code plugin.",
+  "plugins": [
+    {
+      "name": "bc-skills",
+      "source": "./",
+      "description": "Ben Carmichael's Claude Code skills for development workflows.",
+      "category": "productivity",
+      "keywords": [
+        "skills",
+        "productivity",
+        "writing"
+      ]
+    }
+  ]
+}

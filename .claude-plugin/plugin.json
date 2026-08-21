@@ -1,0 +1,20 @@
+{
+  "name": "bc-skills",
+  "version": "0.1.0",
+  "description": "Ben Carmichael's Claude Code skills for development workflows.",
+  "author": {
+    "name": "Ben Carmichael",
+    "url": "https://github.com/ben-carmichael"
+  },
+  "repository": "https://github.com/ben-carmichael/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "productivity",
+    "writing"
+  ],
+  "skills": [
+    "./skills/productivity/todo",
+    "./skills/writing/write-case-study"
+  ]
+}
