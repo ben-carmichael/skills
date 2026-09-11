@@ -2,13 +2,22 @@
 name: write-case-study
 description: Generate a polished case study blog post in markdown from a code repository.
 disable-model-invocation: true
+argument-hint: "[repo-path] [tone-reference-file]"
 ---
 
 # Case Study Generator
 
 Generate a professional case study blog post in markdown format from a code repository. The output is portfolio content aimed at a technical audience — typically hiring managers or senior engineers evaluating the author's work.
 
-If the user provides personal context (e.g., their name, role, employer, or audience) via arguments or in conversation, incorporate it. Otherwise, write in a neutral first-person voice and ask for any key details you need before writing.
+## Determine intent
+
+- **No arguments**: Write the case study for the current working directory's repository.
+- **One argument**: A directory path is the target repository; a file path is a tone-of-voice reference and the target stays the current repository.
+- **Two arguments**: The first is the target repository; the second is a tone-of-voice reference file.
+
+A tone-of-voice reference is an example of the author's writing to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
+
+If the user provides personal context (e.g., their name, role, employer, or audience) in conversation, incorporate it. Otherwise, write in a neutral first-person voice and ask for any key details you need before writing.
 
 ## Audience & Tone
 
@@ -54,3 +63,15 @@ See `references/template.md` for the full output template.
 ## Output
 
 Return the case study as a single markdown document. Do not wrap it in a code block — output it as a raw `.md` file ready to publish. Save it to a sensible location in the project with a timestamped filename (e.g., `case-study-2025-01-15.md` in the root) unless the user specifies otherwise. Use today's actual date in `YYYY-MM-DD` format.
+
+## Unslop pass
+
+Always run the `unslop` skill on the finished draft before presenting it. This is not optional and not conditional on how clean the draft looks.
+
+Invoke it with the saved case-study file as the target. If a tone-of-voice reference was given, pass it as the second argument so the two skills match the same voice:
+
+```
+/unslop <case-study-file> [tone-reference-file]
+```
+
+Apply its edits in place, then present the result.
