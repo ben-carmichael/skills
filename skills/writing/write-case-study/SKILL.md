@@ -6,19 +6,27 @@ disable-model-invocation: true
 
 # Case Study Generator
 
+## Step 0: interview the user (do this first)
+
+**The first action of this skill is a single `AskUserQuestion` call containing all three questions below. No other tool may be called before it** — no `ls`, no `cat`, no `git`, no reading the README. If the first tool call of this skill is anything other than that `AskUserQuestion`, the skill has been run incorrectly.
+
+Put all three in **one** call (the tool accepts up to four questions at once). Every question needs 2–4 options; the tool adds a free-text "Other" automatically, which is how the user supplies a path or a paragraph of their own.
+
+| # | header | question | options |
+|---|--------|----------|---------|
+| 1 | `Repository` | Which repository should the case study cover? | Current directory (name it explicitly), plus any sibling repo worth offering. |
+| 2 | `Voice` | Is there a sample of your own writing to match the voice to? | Plausible candidates found nearby — but find them by glancing at the question, not by researching the repo — plus "No reference — use the default voice". |
+| 3 | `Context` | What should I know that the code cannot tell me — your role, team size, adoption numbers, who the piece is for? | "I'll describe it" (prompting them to use Other), "Skip — write in a neutral first-person voice", and any specific angle worth offering. |
+
+Skip an individual question only if the user already answered it in this conversation. If that leaves any unanswered, still make the call with the ones that remain.
+
+Only once that call returns may research begin.
+
+## What this produces
+
 Generate a professional case study blog post in markdown format from a code repository. The output is portfolio content aimed at a technical audience — typically hiring managers or senior engineers evaluating the author's work.
 
-## Gather inputs
-
-**Before any research, ask all three questions below in a single message, then stop and wait for the answer.** Do not begin exploring the repository, reading files, or drafting until the user has replied. Asking only about the repository and proceeding is a failure of this skill.
-
-Ask them as a numbered list in plain text — the answers are free-form, so do not use a multiple-choice prompt:
-
-1. **Target repository** — offer the current working directory as the default.
-2. **Tone-of-voice reference** — an optional file of the author's own writing. List plausible candidates found nearby rather than demanding a typed path.
-3. **Personal context** — role on the project, team size, adoption metrics, who the piece is aimed at. The codebase cannot reveal any of this. Ask plainly and accept a short answer or none.
-
-Skip an individual question only if the user already answered it in conversation. If that leaves at least one unanswered, still ask the remaining ones and wait.
+## Using the answers
 
 A tone-of-voice reference is an example to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
 
