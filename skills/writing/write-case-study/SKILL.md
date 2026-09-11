@@ -2,22 +2,25 @@
 name: write-case-study
 description: Generate a polished case study blog post in markdown from a code repository.
 disable-model-invocation: true
-argument-hint: "[repo-path] [tone-reference-file]"
 ---
 
 # Case Study Generator
 
 Generate a professional case study blog post in markdown format from a code repository. The output is portfolio content aimed at a technical audience — typically hiring managers or senior engineers evaluating the author's work.
 
-## Determine intent
+## Gather inputs
 
-- **No arguments**: Write the case study for the current working directory's repository.
-- **One argument**: A directory path is the target repository; a file path is a tone-of-voice reference and the target stays the current repository.
-- **Two arguments**: The first is the target repository; the second is a tone-of-voice reference file.
+Ask for three inputs in a single round before researching:
 
-A tone-of-voice reference is an example of the author's writing to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
+1. **Target repository** — offer the current working directory as the default.
+2. **Tone-of-voice reference** — an optional file of the author's own writing. List plausible candidates found nearby rather than demanding a typed path.
+3. **Personal context** — role on the project, team size, adoption metrics, who the piece is aimed at. The codebase cannot reveal any of this. Ask plainly and accept a short answer or none.
 
-If the user provides personal context (e.g., their name, role, employer, or audience) in conversation, incorporate it. Otherwise, write in a neutral first-person voice and ask for any key details you need before writing.
+If the user already stated any of these in conversation, take it as given and don't ask again.
+
+A tone-of-voice reference is an example to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
+
+If the user skips personal context, write in a neutral first-person voice. When they describe their own contributions ("I led the architecture"), use first person and let it carry their ownership.
 
 ## Audience & Tone
 
@@ -58,7 +61,7 @@ See `references/template.md` for the full output template.
 - **Use concrete details from the codebase.** Reference actual patterns, actual component counts, actual tooling — the reader should feel like this is grounded in real work, not a template with blanks filled in.
 - **Don't oversell.** If something is straightforward, don't dress it up as innovative. Authenticity builds trust.
 - **Structure for scanning.** Hiring managers are busy. Use headers, short paragraphs, and the tech stack table to make key info findable at a glance.
-- **Incorporate user-provided context.** If the user tells you about their role ("I led the architecture"), team size, adoption metrics, or other personal context, weave it into the case study naturally. Use first-person voice when the user describes their personal contributions — this is portfolio content and should reflect their ownership.
+- **Weave in the personal context.** Whatever the user gave under "Gather inputs" belongs in the narrative, not in a lump at the top.
 
 ## Output
 
