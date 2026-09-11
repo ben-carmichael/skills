@@ -10,13 +10,15 @@ Generate a professional case study blog post in markdown format from a code repo
 
 ## Gather inputs
 
-Ask for three inputs in a single round before researching:
+**Before any research, ask all three questions below in a single message, then stop and wait for the answer.** Do not begin exploring the repository, reading files, or drafting until the user has replied. Asking only about the repository and proceeding is a failure of this skill.
+
+Ask them as a numbered list in plain text — the answers are free-form, so do not use a multiple-choice prompt:
 
 1. **Target repository** — offer the current working directory as the default.
 2. **Tone-of-voice reference** — an optional file of the author's own writing. List plausible candidates found nearby rather than demanding a typed path.
 3. **Personal context** — role on the project, team size, adoption metrics, who the piece is aimed at. The codebase cannot reveal any of this. Ask plainly and accept a short answer or none.
 
-If the user already stated any of these in conversation, take it as given and don't ask again.
+Skip an individual question only if the user already answered it in conversation. If that leaves at least one unanswered, still ask the remaining ones and wait.
 
 A tone-of-voice reference is an example to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
 
