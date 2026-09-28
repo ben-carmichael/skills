@@ -28,7 +28,7 @@ Generate a professional case study blog post in markdown format from a code repo
 
 ## Using the answers
 
-A tone-of-voice reference is an example to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
+A voice reference is an example to emulate, not a rules list. Read it before drafting and match its sentence length and rhythm, word choice, how opinionated or hedged it is, and its structural habits. Where it conflicts with the tone guidance below, the reference wins.
 
 If the user skips personal context, write in a neutral first-person voice. When they describe their own contributions ("I led the architecture"), use first person and let it carry their ownership.
 
@@ -79,12 +79,14 @@ Return the case study as a single markdown document. Do not wrap it in a code bl
 
 ## Unslop pass
 
-Always run the `unslop` skill on the finished draft before presenting it. This is not optional and not conditional on how clean the draft looks.
+Always run the `unslop-voice` skill on the finished draft before presenting it. This is not optional and not conditional on how clean the draft looks.
 
-Invoke it with the saved case-study file as the target. If a tone-of-voice reference was given, pass it as the second argument so the two skills match the same voice:
+`unslop-voice` is manual-only, so don't invoke it through the Skill tool. Read `../unslop-voice/SKILL.md`, relative to this file, and follow it with these arguments. Use the saved case-study file as the target. If a voice reference was given, pass it too, so both skills match the same voice:
 
 ```
-/unslop <case-study-file> [tone-reference-file]
+unslop-voice <case-study-file> [voice-reference-file]
 ```
+
+If `unslop-voice` isn't installed, tell the user and present the draft without it.
 
 Apply its edits in place, then present the result.

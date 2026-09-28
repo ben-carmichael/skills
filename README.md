@@ -117,7 +117,5 @@ Skills for producing and cleaning up written content.
 **User-invoked**
 
 - **[write-case-study](./skills/writing/write-case-study/SKILL.md)**: Generate a polished case study blog post in markdown from a code repository.
-
-**Model-invoked**
-
-- **[unslop](./skills/writing/unslop/SKILL.md)**: Cut AI tells from any writing. Must always apply.
+- **[unslop](./skills/writing/unslop/SKILL.md)**: Cut AI tells from any writing. _Mirrored from [cursor/plugins@70b2dc8](https://github.com/cursor/plugins/blob/70b2dc8/pstack/skills/unslop/SKILL.md)._
+- **[unslop-voice](./skills/writing/unslop-voice/SKILL.md)**: Run unslop in British English, optionally matching a voice reference.
