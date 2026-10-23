@@ -25,7 +25,7 @@ Skills live under `skills/<category>/<skill-name>/`, each a directory containing
 - **Frontmatter `description`**: Third-person with trigger phrases (e.g., "This skill should be used when the user asks to...")
 - **Body**: Imperative form, not second person
 - **User-invoked skills**: Include `argument-hint` in frontmatter — this controls the hint shown in the skill UI and enables the argument input field. Omit `argument-hint` entirely if the skill takes no arguments
-- **Manual-only skills**: Set `disable-model-invocation: true` in frontmatter for skills that should only run when explicitly invoked (e.g. `/write-case-study`), never auto-triggered by conversation context. Their `description` can then be a plain one-liner — no need for trigger phrases since the model never matches against it
+- **Manual-only skills**: Set `disable-model-invocation: true` in frontmatter for skills that should only run when explicitly invoked (e.g. `/unslop-voice`), never auto-triggered by conversation context. Their `description` can then be a plain one-liner — no need for trigger phrases since the model never matches against it
 - **Keep SKILL.md lean**: Target 1,500–2,000 words; move detailed content to `references/`
 - **Attribution**: Skills directly adapted from other repos get `_Adapted from [owner/repo](url)._` in the README entry; skills merely inspired by another repo do not need attribution
 - **Naming**: No author prefix — the plugin namespace handles disambiguation. Kebab-case for all directory and file names

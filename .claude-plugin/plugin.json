@@ -15,7 +15,6 @@
   ],
   "skills": [
     "./skills/productivity/todo",
-    "./skills/writing/write-case-study",
     "./skills/writing/unslop",
     "./skills/writing/unslop-voice"
   ]

@@ -39,7 +39,7 @@ npx skills@latest add ben-carmichael/skills
 Install specific skills:
 
 ```bash
-npx skills@latest add ben-carmichael/skills --skill todo --skill write-case-study
+npx skills@latest add ben-carmichael/skills --skill todo
 ```
 
 Install all available skills:
@@ -116,6 +116,5 @@ Skills for producing and cleaning up written content.
 
 **User-invoked**
 
-- **[write-case-study](./skills/writing/write-case-study/SKILL.md)**: Generate a polished case study blog post in markdown from a code repository.
-- **[unslop](./skills/writing/unslop/SKILL.md)**: Cut AI tells from any writing. _Mirrored from [cursor/plugins@70b2dc8](https://github.com/cursor/plugins/blob/70b2dc8/pstack/skills/unslop/SKILL.md)._
+- **[unslop](./skills/writing/unslop/SKILL.md)**: Cut AI tells from any writing. _Mirrored from [cursor/plugins@bc697d0](https://github.com/cursor/plugins/blob/bc697d0/pstack/skills/unslop/SKILL.md)._
 - **[unslop-voice](./skills/writing/unslop-voice/SKILL.md)**: Run unslop in British English, optionally matching a voice reference.
